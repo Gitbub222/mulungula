@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Nav from "./navbar";
 import Socials from './components/socials'
 import AboutMe from "./components/aboutme";
 import WorkExperience from "./components/workexperience";
@@ -13,8 +12,8 @@ export default function Home() {
 
           <div className="flex flex-row space-x-10 bg-white shadow rounded-lg p-6 text-black">
             <div>
-              <img className="rounded" src="/images/me.jpg" width="200"
-                height="250" />
+              <Image className="rounded" src="/images/me.jpg" width="200"
+                height="250" alt=""/>
             </div>
             <div>
               <h1 className="text-2xl font-bold">Baraka Mulungula</h1>

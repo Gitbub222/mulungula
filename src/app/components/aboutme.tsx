@@ -17,7 +17,7 @@ const AboutMe: React.FC = () => {
 
                 My professional interests lie in web and mobile development,
                 where I enjoy creating innovative solutions. But my
-                curiosity doesn't stop there. I love diving into
+                curiosity doesn&apos;t stop there. I love diving into
                 philosophical questions, trying to understand the world
                 better. I also stay active with a rigorous workout routine
                 and love experimenting with new recipes in the kitchen. This

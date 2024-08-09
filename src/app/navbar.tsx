@@ -1,5 +1,6 @@
 'use client'
 
+import Image from "next/image";
 import Link from "next/link"
 import { usePathname } from "next/navigation"; // Import usePathname hook
 
@@ -30,7 +31,7 @@ const Nav: React.FC = () => {  // Use FC type
                     </div>
                     <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                         <div className="flex flex-shrink-0 items-center">
-                            <img className="h-9 w-9 rounded" src="/images/icon.jpeg" alt="Baraka Mulungula" />
+                            <Image className="h-9 w-9 rounded" src="/images/icon.jpeg" alt="Baraka Mulungula" />
                         </div>
                         <div className="hidden sm:ml-6 sm:block">
                             <div className="flex space-x-4">

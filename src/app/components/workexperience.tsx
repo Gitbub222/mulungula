@@ -85,7 +85,7 @@ const WorkExperience: React.FC = () => {
                 <li>Assembled and configured Care.ai smart entry devices
                     for senior living communities during the COVID
                     lockdown. This task involved working to ensure the
-                    devices functioned properly, supporting residents'
+                    devices functioned properly, supporting residents&apos;
                     well-being during a challenging time.</li>
             </ul>
         </div>
@@ -120,9 +120,9 @@ const WorkExperience: React.FC = () => {
                 </span>
             </div>
             <ul  className="mt-3">
-                <li>Developed the frontend for GoodMaps, the company's
+                <li>Developed the frontend for GoodMaps, the company&apos;s
                     web app using React JS, Material, and Three JS.</li>
-                <li>Contributed to the development of the company's
+                <li>Contributed to the development of the company&apos;s
                     mobile app, Explore, using React Native. My
                     responsibilities included building features, styling
                     UI elements, and optimizing performance.</li>
