@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-mulungula-dev-9d565-authRole",
+      "UnauthRoleArn": "arn:aws:iam::193805351637:role/amplify-mulungula-dev-9d565-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::193805351637:role/amplify-mulungula-dev-9d565-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-mulungula-dev-9d565-deployment",
+      "UnauthRoleName": "amplify-mulungula-dev-9d565-unauthRole",
+      "StackName": "amplify-mulungula-dev-9d565",
+      "StackId": "arn:aws:cloudformation:us-east-1:193805351637:stack/amplify-mulungula-dev-9d565/8fc3b7a0-56c1-11ef-a2ba-121dba6e20cf",
+      "AmplifyAppId": "daw3w7pek31hm"
+    },
+    "categories": {
+      "api": {
+        "mulungula": {}
+      }
+    }
+  }
+}
