@@ -1,6 +1,8 @@
 'use client'
 import { useState } from "react";
 import countriesData from "./../../../public/countries.json";
+import { DataStore } from '@aws-amplify/datastore';
+import { ContactInfo } from '../../models/models'; // Adjust the import path based on your project structure
 
 export default function Home() {
   const [formData, setFormData] = useState<any>({
@@ -25,15 +27,30 @@ export default function Home() {
     setErrors({ ...errors, [name]: '' });
   };
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
     const validationErrors = validateForm();
-    
+  
     if (Object.keys(validationErrors).length === 0) {
-      // Form is valid, proceed with submission logic
-      console.log("Form submitted", formData);
+      try {
+        await DataStore.save(
+          new ContactInfo({
+            firstName: formData.firstName,
+            lastName: formData.lastName,
+            email: formData.email,
+            mobile: formData.mobile,
+            country: formData.country,
+            streetAddress: formData.streetAddress,
+            city: formData.city,
+            region: formData.region,
+            postalCode: formData.postalCode,
+          })
+        );
+        console.log("Form submitted successfully");
+      } catch (error) {
+        console.error("Error saving form data:", error);
+      }
     } else {
-      // Form is invalid, show errors
       setErrors(validationErrors);
     }
   };
